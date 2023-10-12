@@ -1,14 +1,20 @@
 doctype html
-html
+html(lang="en")
   head
     meta(charset="UTF-8")
-    title Movie API
+    title Documentation
     link(rel="icon", type="image/x-icon", href="/public/img/favicons/favicon.ico")
     link(rel="apple-touch-icon", sizes="180x180", href="/public/img/favicons/apple-touch-icon.png")
     link(rel="icon", type="image/png", sizes="32x32", href="/public/img/favicons/favicon-32x32.png")
     link(rel="icon", type="image/png", sizes="16x16", href="/public/img/favicons/favicon-16x16.png")
     link(rel="manifest", href="/public/img/favicons/site.webmanifest")
   body
-    h1 Welcome to the Movie API
-    p This is the home page of the Movie API. To access the documentation, click
-      a(href="/documentation") here
+    h1 Server Documentation
+    h2 Endpoints
+    ul
+      li
+        a(href="/") Home - Accessible at /, Returns the home page.
+      li
+        a(href="/documentation") Documentation - Accessible at /documentation, Returns this documentation page.
+      li
+        a(href="/movies") Movies - Accessible at /movies, Returns a JSON object with a list of 10 movies.
