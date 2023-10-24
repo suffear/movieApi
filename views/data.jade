@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title= title
+    link(rel="icon" type="image/x-icon" href="/public/img/favicons/favicon.ico")
+    link(rel="apple-touch-icon" sizes="180x180" href="/public/img/favicons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="/public/img/favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="/public/img/favicons/favicon-16x16.png")
+
+  body
+    h1= header
+
+      table
+        thead
+          tr
+            each key in Object.keys(items[0])
+              th= key.charAt(0).toUpperCase() + key.slice(1)
+
+        tbody
+          each item in items
+            tr
+              each key in Object.keys(item)
+                td= item[key]

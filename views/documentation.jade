@@ -7,7 +7,6 @@ html(lang="en")
     link(rel="apple-touch-icon", sizes="180x180", href="/public/img/favicons/apple-touch-icon.png")
     link(rel="icon", type="image/png", sizes="32x32", href="/public/img/favicons/favicon-32x32.png")
     link(rel="icon", type="image/png", sizes="16x16", href="/public/img/favicons/favicon-16x16.png")
-    link(rel="manifest", href="/public/img/favicons/site.webmanifest")
   body
     h1 Server Documentation
     h2 Endpoints
@@ -17,4 +16,6 @@ html(lang="en")
       li
         a(href="/documentation") Documentation - Accessible at /documentation, Returns this documentation page.
       li
-        a(href="/movies") Movies - Accessible at /movies, Returns a JSON object with a list of 10 movies.
+        a(href="/movies") Movies - Accessible at /movies, Returns a HTML with a list of all movies.
+      li
+        a(href="/top10movies") Top 10 Movies - Accessible at /top10movies, Returns a HTML with a list of the top 10 movies.
